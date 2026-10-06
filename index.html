@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podium Foods | CoreCrunch Pods</title>
+  <style>
+    :root{
+      --green:#173d2b;
+      --green2:#24583e;
+      --gold:#d6a62e;
+      --cream:#f7f0df;
+      --dark:#171a18;
+      --white:#fffdf7;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--dark)}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:var(--green);color:white}
+    .brand{font-weight:900;letter-spacing:2px;font-size:22px}.brand span{color:var(--gold)}
+    nav a{color:white;text-decoration:none;margin-left:22px;font-weight:700}
+    .hero{min-height:72vh;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px;padding:70px 8%;background:linear-gradient(135deg,var(--green),#10281d);color:white}
+    .eyebrow{color:var(--gold);font-weight:900;letter-spacing:3px}
+    h1{font-size:64px;line-height:.98;margin:12px 0 20px;max-width:700px}
+    .hero p{font-size:20px;line-height:1.55;max-width:650px;color:#f1ead9}
+    .button{display:inline-block;margin-top:18px;padding:15px 24px;background:var(--gold);color:#151515;text-decoration:none;border-radius:8px;font-weight:900}
+    .pod-visual{background:var(--cream);border:5px solid var(--gold);border-radius:36px;padding:38px;color:var(--green);text-align:center;box-shadow:0 18px 50px rgba(0,0,0,.28)}
+    .pod-visual .trophy{font-size:90px}
+    .pod-visual h2{font-size:34px;margin:10px 0}.pod-visual p{color:var(--green);font-size:18px}
+    section{padding:70px 8%}
+    .center{text-align:center}.center h2{font-size:40px;margin-bottom:12px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:35px}
+    .card{background:white;padding:28px;border-radius:16px;border-top:5px solid var(--gold);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+    .card h3{color:var(--green);font-size:23px}
+    .product{background:white;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .product h2{font-size:46px;color:var(--green);margin-bottom:10px}
+    .quote{font-size:28px;font-weight:900;color:var(--gold);margin:20px 0}
+    .fake-bag{max-width:390px;margin:auto;background:var(--green);color:white;border-radius:20px;padding:48px 30px;text-align:center;border:6px solid var(--gold);transform:rotate(2deg);box-shadow:0 15px 35px rgba(0,0,0,.18)}
+    .fake-bag .small{letter-spacing:4px;color:var(--gold);font-weight:bold}.fake-bag h3{font-size:40px;margin:12px 0}.fake-bag .flavor{font-size:19px}
+    .launch{background:var(--dark);color:white}.launch h2{color:var(--gold);font-size:42px}.launch p{max-width:800px;font-size:18px;line-height:1.6}
+    footer{background:var(--green);color:white;text-align:center;padding:28px}
+    @media(max-width:800px){.hero,.product{grid-template-columns:1fr}.cards{grid-template-columns:1fr}h1{font-size:46px}nav div:last-child{display:none}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">PODIUM <span>FOODS</span></div>
+    <div><a href="#product">CoreCrunch</a><a href="#why">Why Us</a><a href="#launch">Launch</a></div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <div class="eyebrow">NOT ANOTHER PROTEIN BAR.</div>
+      <h1>Protein finally feels like a real snack.</h1>
+      <p>Meet CoreCrunch Pods: a savory, high-protein snack with a crunchy chickpea-based shell and a creamy roasted garlic parmesan center.</p>
+      <a class="button" href="#product">TRY CORECRUNCH</a>
+    </div>
+    <div class="pod-visual">
+      <div class="trophy">🏆</div>
+      <h2>CORECRUNCH PODS</h2>
+      <p><strong>Crunch First. Cream Next.</strong></p>
+      <p>Bold flavor. Unique texture. Better nutrition.</p>
+    </div>
+  </header>
+
+  <section id="why" class="center">
+    <h2>Built for more than protein.</h2>
+    <p>Podium Foods believes better nutrition should not mean giving up the snacking experience.</p>
+    <div class="cards">
+      <div class="card"><h3>High Protein</h3><p>Designed for active consumers looking for a more satisfying way to add protein to their day.</p></div>
+      <div class="card"><h3>Actually Savory</h3><p>A roasted garlic parmesan center gives you a break from the sweet bars and shakes dominating protein snacks.</p></div>
+      <div class="card"><h3>Crunch + Cream</h3><p>A crunchy chickpea shell and creamy center create the signature CoreCrunch eating experience.</p></div>
+    </div>
+  </section>
+
+  <section id="product" class="product">
+    <div class="fake-bag">
+      <div class="small">PODIUM FOODS</div>
+      <h3>CORE<br>CRUNCH</h3>
+      <div class="flavor">Roasted Garlic Parmesan</div>
+      <p>HIGH-PROTEIN SAVORY PODS</p>
+    </div>
+    <div>
+      <h2>Crunch First.<br>Cream Next.</h2>
+      <div class="quote">A protein snack you'll actually look forward to eating.</div>
+      <p>CoreCrunch Pods combine a baked chickpea-based shell with a creamy roasted garlic parmesan center. Their portable format is made for busy college students, gym-goers, and young professionals who want something satisfying between meals.</p>
+      <a class="button" href="#launch">SEE OUR LAUNCH</a>
+    </div>
+  </section>
+
+  <section id="launch" class="launch">
+    <h2>Launching in Lexington.</h2>
+    <p>Podium Foods plans to introduce CoreCrunch Pods in Lexington, Kentucky, with an initial focus around the University of Kentucky. Campus convenience stores, vending locations, nearby gyms, grocery stores, and sampling events give us direct access to the consumers CoreCrunch was created for.</p>
+    <p><strong>College. Work. Gym. Wherever your day takes you, bring the crunch.</strong></p>
+  </section>
+
+  <footer>
+    <strong>PODIUM FOODS</strong><br><br>
+    Better nutrition. Better snacking.
+  </footer>
+</body>
+</html>
